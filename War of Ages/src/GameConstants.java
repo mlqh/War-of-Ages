@@ -30,7 +30,7 @@ public interface GameConstants {
     // Menu
     public static final String PAUSE_STRING = "SPACE";
     public static final String EVOLUTION = "EVO.";
-    public static final String VOLUME_STRING = "T";
+    public static final String VOLUME_STRING = "M";
     public static final String LEFT_EVOLVE_STRING = "Press A To Evolve!";
     public static final String RIGHT_EVOLVE_STRING = "Press L to Evolve!";
     public static final String CREATURE_CREATION_ICONS_PATH = "Images\\Menu\\CreatureCreationIcons\\";
@@ -43,7 +43,6 @@ public interface GameConstants {
     public static final int NUM_CC_ICONS = 4;
     public static final int NUM_CC_INFO = 5;
     public static final int NUM_MENU_ICONS = 9;
-    public static final int CREATURE_CREATION = 0;
     public static final int HEALTH = 1;
     public static final int DAMAGE = 2;
     public static final int RANGE = 3;
@@ -52,12 +51,10 @@ public interface GameConstants {
     public static final int VOLUME_OFF = 7;
     public static final int VOLUME_ON = 8;
     
-    public static final Point LEFT_FIRST_ICON_POS = new Point(0,40);
-    public static final Point LEFT_FIRST_NUMBER_POS = new Point(0,47); 
-    public static final Point RIGHT_FIRST_ICON_POS = new Point(SCREEN_WIDTH - ICON_WIDTH-8,40);
-    public static final Point RIGHT_FIRST_NUMBER_POS = new Point(RIGHT_FIRST_ICON_POS.x,47);
-    public static final Point LEFT_FIRST_CC_POS = new Point(65,40);
-    public static final Point RIGHT_FIRST_CC_POS = new Point(965,40);
+    public static final Point LEFT_FIRST_ICON_POS = new Point(8,50);
+    public static final Point RIGHT_FIRST_ICON_POS = new Point(SCREEN_WIDTH - ICON_WIDTH - 30,50);
+    public static final Point LEFT_FIRST_CC_POS = new Point(65,50);
+    public static final Point RIGHT_FIRST_CC_POS = new Point(945,50);
     public static final Point LEFT_TURRET_ICON = new Point(30, SCREEN_HEIGHT-20);
     
     // Misc
@@ -80,7 +77,7 @@ public interface GameConstants {
     public static final int PAINT_DELAY = 50;
     public static final int SUMMON_DELAY = 1000;
     public static final int GOLD_DELAY = 1000;
-    public static final int START_GOLD = 10000;
+    public static final int START_GOLD = 1000;
     public static final int MAX_CREATURES_IN_QUEUE = 4;
     
     public static final int SECOND_PROJECTILES = 0;
@@ -102,7 +99,7 @@ public interface GameConstants {
     public static final Point LEFT_SPAWN = new Point (0, FLOOR_HEIGHT - 18);
     public static final String[] LEFT_CREATURE_KEYS = {"1","2","3","4"};
     public static final String[] LEFT_TURRET_KEYS = {"Z","X","C"};
-    public static final String LEFT_EVOLUTE_KEY = "A";
+    public static final String LEFT_EVOLVE_KEY = "A";
     
     //Right Team
     public static final int RIGHT_TEAM = -1;
@@ -113,7 +110,7 @@ public interface GameConstants {
     public static final Point RIGHT_SPAWN = new Point(SCREEN_WIDTH - 50, FLOOR_HEIGHT - 18);
     public static final String[] RIGHT_CREATURE_KEYS = {"7","8","9","0"};
     public static final String[] RIGHT_TURRET_KEYS = {"M","N","B"};
-    public static final String RIGHT_EVOLUTE_KEY = "L";
+    public static final String RIGHT_EVOLVE_KEY = "L";
     
     //Constants for type of entity to create
     public static final int FIRST_TYPE = 0;

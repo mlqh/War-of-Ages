@@ -256,18 +256,18 @@ public class Player implements GameConstants, EntityConstants {
             g.drawString(Integer.toString(this.currentEvolution),450,100);
             for(int i= 0;i<NUM_CC_ICONS;i++){
                 // Left Menu
-                g.drawString(Integer.toString(CREATURE_HEALTHS[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_NUMBER_POS.y+(1*2*NUMBER_SEPARATOR));
-                g.drawString(Integer.toString(CREATURE_DAMAGES[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_NUMBER_POS.y+(2*2*NUMBER_SEPARATOR));
-                g.drawString(Integer.toString(CREATURE_RANGES[i]),LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_NUMBER_POS.y+(3*2*NUMBER_SEPARATOR));
-                g.drawString(LEFT_CREATURE_KEYS[i],LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_NUMBER_POS.y+(4*2*NUMBER_SEPARATOR));
+                g.drawString(Integer.toString(CREATURE_HEALTHS[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_ICON_POS.y+7+(2*NUMBER_SEPARATOR));
+                g.drawString(Integer.toString(CREATURE_DAMAGES[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_ICON_POS.y+7+(4*NUMBER_SEPARATOR));
+                g.drawString(Integer.toString(CREATURE_RANGES[i]),LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_ICON_POS.y+7+(6*NUMBER_SEPARATOR));
+                g.drawString(LEFT_CREATURE_KEYS[i],LEFT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),LEFT_FIRST_ICON_POS.y+7+(8*NUMBER_SEPARATOR));
             }
             
             // Rectangles of monsters in queue
             for(int i = 0; i<MAX_IN_QUEUE;i++){
                 for(int j =0 ;j < this.summonQueue.size();j++){
-                    g.fillRect(4+(j*65),10,45,25);
+                    g.fillRect(4+(j*65) + 5, 10, 45, 25);
                 }
-                g.drawRect(4+(i*65),10,45,25);
+                g.drawRect(4+(i*65) + 5, 10, 45, 25);
             }
             
         // right team    
@@ -281,17 +281,17 @@ public class Player implements GameConstants, EntityConstants {
             g.drawString(Integer.toString(this.currentEvolution),750,100);
             for(int i= 0;i<NUM_CC_ICONS;i++){
                 // Right Menu
-                g.drawString(Integer.toString(CREATURE_HEALTHS[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_NUMBER_POS.y+(1*2*NUMBER_SEPARATOR));
-                g.drawString(Integer.toString(CREATURE_DAMAGES[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_NUMBER_POS.y+(2*2*NUMBER_SEPARATOR));
-                g.drawString(Integer.toString(CREATURE_RANGES[i]),RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_NUMBER_POS.y+(3*2*NUMBER_SEPARATOR));
-                g.drawString(RIGHT_CREATURE_KEYS[i],RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_NUMBER_POS.y+(4*2*NUMBER_SEPARATOR));
+                g.drawString(Integer.toString(CREATURE_HEALTHS[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_ICON_POS.y+7+(2*NUMBER_SEPARATOR));
+                g.drawString(Integer.toString(CREATURE_DAMAGES[i]+(STAT_MULTIPLIERS[i]*this.currentEvolution)),RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_ICON_POS.y+7+(4*NUMBER_SEPARATOR));
+                g.drawString(Integer.toString(CREATURE_RANGES[i]),RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_ICON_POS.y+7+(6*NUMBER_SEPARATOR));
+                g.drawString(RIGHT_CREATURE_KEYS[i],RIGHT_FIRST_CC_POS.x + (i*2*ICON_WIDTH),RIGHT_FIRST_ICON_POS.y+7+(8*NUMBER_SEPARATOR));
             }
             // Rectangles of monsters in queue
             for(int i = 0; i<MAX_IN_QUEUE;i++){
                 for(int j =0; j < this.summonQueue.size();j++){
-                    g.fillRect(SCREEN_WIDTH-(ICON_WIDTH*2) - 200 + (j*65),10,45,25);
+                    g.fillRect(SCREEN_WIDTH-(ICON_WIDTH*2) - 215 + (j*65),10,45,25);
                 }
-                g.drawRect(SCREEN_WIDTH-(ICON_WIDTH*2) - 200+(i*65),10,45,25);
+                g.drawRect(SCREEN_WIDTH-(ICON_WIDTH*2) - 215 + (i*65),10,45,25);
             }
         }        
     }

@@ -51,9 +51,9 @@ public class Tower extends Destructible implements GameConstants, EntityConstant
         } else {
             percentage = (int)((this.getHealth()*100.0f)/TOWER_HEALTH);
             healthBar = (int)(fullBar*percentage/100.0);
-            healthBarX = this.getPosition().x+TOWER_WIDTH-healthBar;
+            healthBarX = this.getPosition().x+TOWER_WIDTH-healthBar - 2;
             g.setColor(Color.RED);
-            g.fillRect(healthBarX, this.getPosition().y-30,healthBar,25);
+            g.fillRect(healthBarX, this.getPosition().y-30,healthBar - 2,25);
         }
         g.drawImage(this.currentSprite, this.getPosition().x,this.getPosition().y, null);
         if(this.turrets.size() > 0) {

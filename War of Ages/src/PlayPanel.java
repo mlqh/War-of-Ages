@@ -220,7 +220,7 @@ public class PlayPanel extends JPanel implements GameConstants, EntityConstants 
             
             //Drawing of heart next to tower health bar               
             g.drawImage(this.menuItems[HEALTH],playerOne.getTower().getPosition().x - 30,playerOne.getTower().getPosition().y-30,null);
-            g.drawImage(this.menuItems[HEALTH],playerTwo.getTower().getPosition().x + 107 +18, playerTwo.getTower().getPosition().y-30,null);
+            g.drawImage(this.menuItems[HEALTH],playerTwo.getTower().getPosition().x + 113, playerTwo.getTower().getPosition().y-30,null);
             
             // Gold, Evo, Pause, Sound
             g.setFont(new Font("Tahoma",Font.BOLD,15));
@@ -228,14 +228,15 @@ public class PlayPanel extends JPanel implements GameConstants, EntityConstants 
             g.drawImage(this.menuItems[GOLD],400,60,null);
             g.drawString(EVOLUTION,400,100);
             g.drawString(EVOLUTION,700,100);
-            g.drawString(PAUSE_STRING,500,SCREEN_HEIGHT-55);
-            g.drawImage(this.menuItems[PAUSE],510,SCREEN_HEIGHT-50,null);
-            g.drawString(VOLUME_STRING,650,SCREEN_HEIGHT-55);
+            
+            g.drawString(PAUSE_STRING,500,SCREEN_HEIGHT-81);
+            g.drawImage(this.menuItems[PAUSE],510,SCREEN_HEIGHT-69,null);
+            g.drawString(VOLUME_STRING,647,SCREEN_HEIGHT-81);
             
             if(this.playingMusic){
-                g.drawImage(this.menuItems[VOLUME_ON],642,SCREEN_HEIGHT-50,null);
+                g.drawImage(this.menuItems[VOLUME_ON],642,SCREEN_HEIGHT-69,null);
             } else {
-                g.drawImage(this.menuItems[VOLUME_OFF],642,SCREEN_HEIGHT-50,null);
+                g.drawImage(this.menuItems[VOLUME_OFF],642,SCREEN_HEIGHT-69,null);
             }             
             
         } else {
