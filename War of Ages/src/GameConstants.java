@@ -2,14 +2,17 @@
  * GameConstants.java
  * Constants interface for various game constants
  * Matthew Hao
- * Jan 20, 2020
+ * Sept 22, 2020
  */
 
 import java.awt.Point;
 
 public interface GameConstants {
     public static final int SCREEN_WIDTH = 1200;
-    public static final int SCREEN_HEIGHT = 675;
+    public static final int SCREEN_HEIGHT = 714;
+    
+    public static final int BACKGROUND_WIDTH = 1200;
+    public static final int BACKGROUND_HEIGHT = 675;
     
     //Image paths
     public static final String PNG_EXT = ".png";
@@ -52,10 +55,11 @@ public interface GameConstants {
     public static final int VOLUME_ON = 8;
     
     public static final Point LEFT_FIRST_ICON_POS = new Point(8,50);
-    public static final Point RIGHT_FIRST_ICON_POS = new Point(SCREEN_WIDTH - ICON_WIDTH - 30,50);
     public static final Point LEFT_FIRST_CC_POS = new Point(65,50);
+    
+    public static final Point RIGHT_FIRST_ICON_POS = new Point(SCREEN_WIDTH - ICON_WIDTH - 30,50);
     public static final Point RIGHT_FIRST_CC_POS = new Point(945,50);
-    public static final Point LEFT_TURRET_ICON = new Point(30, SCREEN_HEIGHT-20);
+
     
     // Misc
     public static final int MAX_IN_QUEUE = 4;
@@ -77,13 +81,13 @@ public interface GameConstants {
     public static final int PAINT_DELAY = 50;
     public static final int SUMMON_DELAY = 1000;
     public static final int GOLD_DELAY = 1000;
-    public static final int START_GOLD = 1000;
+    public static final int START_GOLD = 200;
     public static final int MAX_CREATURES_IN_QUEUE = 4;
     
     public static final int SECOND_PROJECTILES = 0;
     public static final int FOURTH_PROJECTILES = 1;
     public static final int TURRET_PROJECTILES = 2;
-    public static final int GOLD_GAINED = 20;
+    public static final int GOLD_GAINED = 50;
     public static final Point[] LEFT_TURRET_POS = {new Point(50, FLOOR_HEIGHT - 10),new Point(80, FLOOR_HEIGHT - 10),new Point(110, FLOOR_HEIGHT - 10)};
     public static final Point[] RIGHT_TURRET_POS = {new Point(SCREEN_WIDTH - 90, FLOOR_HEIGHT - 10),new Point(SCREEN_WIDTH - 120, FLOOR_HEIGHT - 10), new Point((SCREEN_WIDTH - 150), FLOOR_HEIGHT - 10)};
     

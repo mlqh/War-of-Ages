@@ -2,7 +2,7 @@
  * PlayPanel.java
  * JPanel for game playing 
  * Matthew Hao
- * Jan 20, 2020
+ * Sept 22, 2020
  */
 
 import java.awt.Graphics;

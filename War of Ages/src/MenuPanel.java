@@ -27,9 +27,9 @@ public class MenuPanel extends JPanel implements GameConstants {
         add(playButton);
         add(backgroundLabel);
         
-        backgroundLabel.setBounds(0, 0, 1200, 675);
-        rulesButton.setBounds(305, 500, 270, 60);
-        playButton.setBounds(655, 500, 270, 60);
+        backgroundLabel.setBounds(0, 0, BACKGROUND_WIDTH, BACKGROUND_HEIGHT);
+        rulesButton.setBounds(305, 550, 270, 60);
+        playButton.setBounds(655, 550, 270, 60);
         
         rulesButton.addActionListener(new ButtonListener(this));
         playButton.addActionListener(new ButtonListener(this));

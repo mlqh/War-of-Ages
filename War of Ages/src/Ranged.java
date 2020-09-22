@@ -35,8 +35,12 @@ public class Ranged extends Creature {
             this.setCurrentAttackIndex(this.getCurrentAttackIndex() + 1);
         }  
         this.setCurrentSprite(this.getAttackSprites()[this.getCurrentAttackIndex()]);  
+        
         if(this.getTeamSide() == LEFT_TEAM) {
             projPos = new Point(this.getPosition().x+CREATURE_WIDTH, this.getPosition().y + ARM_HEIGHT);
+            Projectile projectile = new Projectile(this.getTeamSide(), this.projectileType, this.getDamage(), projPos, projectileSprite);
+            this.projectiles.add(projectile);
+            this.setTimeStartedAttack(System.currentTimeMillis());
         } else {
             projPos = new Point (this.getPosition().x,  this.getPosition().y + ARM_HEIGHT);
             Projectile projectile = new Projectile(this.getTeamSide(), this.projectileType, this.getDamage(), projPos, projectileSprite);

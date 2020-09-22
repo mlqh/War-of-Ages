@@ -2,7 +2,7 @@
  * Player.java
  * Player class
  * Matthew Hao
- * Jan 20, 2020
+ * Sept 22, 2020
  */
 
 import java.awt.Graphics;
@@ -146,7 +146,7 @@ public class Player implements GameConstants, EntityConstants {
                     }
                     
                     if(creature.getTeamSide() == LEFT_TEAM){
-                        if(proj.getInitialPos().x - proj.getPosition().x  > ((Ranged)creature).getRangebox().getBoundingBox().getWidth()){
+                        if(proj.getPosition().x - proj.getInitialPos().x > ((Ranged)creature).getRangebox().getBoundingBox().getWidth()){
                             ((Ranged)creature).getProjectiles().remove(i);
                         }
                     } else {
@@ -162,7 +162,7 @@ public class Player implements GameConstants, EntityConstants {
                 currentTime = System.currentTimeMillis();
                 timeElapsed = currentTime-creature.getTimeStartedAttack();
                 // Check if they are eligible to attack again
-                if(creature.getTimeStartedAttack() == 0 ||(timeElapsed >= creature.getAttackSpeed())){           
+                if(creature.getTimeStartedAttack() == 0 || (timeElapsed >= creature.getAttackSpeed())){           
                     creature.attack(enemyAhead);
                     creature.setIdling(false);
                 }

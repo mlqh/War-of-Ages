@@ -44,13 +44,13 @@ public class LoginPanel extends JPanel implements GameConstants {
         add(secondLoginField);
         add(backgroundLabel);
         
-        backgroundLabel.setBounds(0, 0, 1200, 675);
+        backgroundLabel.setBounds(0, 0, BACKGROUND_WIDTH, BACKGROUND_HEIGHT);
         firstLoginLabel.setBounds(350, 295, 350, 50);
         firstLoginField.setBounds(670, 303, 250, 40);
         
         secondLoginLabel.setBounds(350, 365, 350, 50);
         secondLoginField.setBounds(670, 373, 250, 40);
-        OKButton.setBounds(505, 500, 200, 60);
+        OKButton.setBounds(505, 550, 200, 60);
         
         OKButton.addActionListener(new ButtonListener(this));
         

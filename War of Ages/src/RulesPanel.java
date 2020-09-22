@@ -27,8 +27,8 @@ public class RulesPanel extends JPanel implements GameConstants {
         
         add(nextButton);
         add(firstLabel);
-        firstLabel.setBounds(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-        nextButton.setBounds(505, 555, 180, 55);
+        firstLabel.setBounds(0, 0, BACKGROUND_WIDTH, BACKGROUND_HEIGHT);
+        nextButton.setBounds(505, 580, 180, 55);
     }
     
     // second page of rules
@@ -45,8 +45,8 @@ public class RulesPanel extends JPanel implements GameConstants {
         
         this.add(OKButton);
         this.add(secondLabel);
-        OKButton.setBounds(505, 555, 180, 55);
-        secondLabel.setBounds(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        OKButton.setBounds(909, 35, 180, 55);
+        secondLabel.setBounds(0, 0, BACKGROUND_WIDTH, BACKGROUND_HEIGHT);
     }
     
     public void reset() {
@@ -55,7 +55,7 @@ public class RulesPanel extends JPanel implements GameConstants {
         
         this.add(nextButton);
         this.add(firstLabel);
-        firstLabel.setBounds(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-        nextButton.setBounds(505, 555, 180, 55);
+        firstLabel.setBounds(0, 0, BACKGROUND_WIDTH, BACKGROUND_HEIGHT);
+        nextButton.setBounds(505, 580, 180, 55);
     }
 }

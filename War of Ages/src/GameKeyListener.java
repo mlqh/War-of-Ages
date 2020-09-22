@@ -32,7 +32,7 @@ public class GameKeyListener implements KeyListener, GameConstants, EntityConsta
         }
         
         // Volume on/off
-        if(keyCode == KeyEvent.VK_T){
+        if(keyCode == KeyEvent.VK_M){
             if(playPanel.getPlayingMusic()){
                 playPanel.setPlayingMusic(false);
                 playPanel.stopPlayingMusic();

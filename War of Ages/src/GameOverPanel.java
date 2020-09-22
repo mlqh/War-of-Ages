@@ -41,8 +41,8 @@ public class GameOverPanel extends JPanel implements GameConstants {
         backgroundLabel.setBounds(0, 0, 1200, 675);
         winnerLabel.setBounds(500, 295, 350, 50);
         
-        menuButton.setBounds(380, 430, 200, 70);
-        quitButton.setBounds(630, 430, 200, 70);
+        menuButton.setBounds(380, 500, 200, 70);
+        quitButton.setBounds(630, 500, 200, 70);
         
         menuButton.addActionListener(new ButtonListener(this));
         quitButton.addActionListener(new ButtonListener(this));
