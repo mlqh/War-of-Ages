@@ -45,7 +45,7 @@ public abstract class Entity implements GameConstants, EntityConstants {
     public Destructible getEnemyAhead(Player other) {
         LinkedList<Creature> creatures = other.getCreatures();
         
-        // no creatures, enemy is tower
+        // no creatures, closest enemy is tower
         if(creatures.isEmpty()) {
             return other.getTower();
             

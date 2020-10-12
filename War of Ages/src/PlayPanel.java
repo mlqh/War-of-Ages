@@ -252,6 +252,8 @@ public class PlayPanel extends JPanel implements GameConstants, EntityConstants 
     public void stopPlayingMusic(){
         music.stop();
     }
+    
+    //----------------------------------
     public boolean getPlayingMusic(){
         return this.playingMusic;
     }
@@ -264,6 +266,6 @@ public class PlayPanel extends JPanel implements GameConstants, EntityConstants 
     public void setPlayingMusic(boolean set){
         this.playingMusic = set;
     }
-    
+    //---------------------------------
     
 } // PlayPanel class

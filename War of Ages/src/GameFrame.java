@@ -48,6 +48,5 @@ class GameFrame extends JFrame implements GameConstants {
         return this.cardsPanel;
     }
     
-    
 } // end class
 

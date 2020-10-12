@@ -24,16 +24,17 @@ public abstract class Destructible extends Entity {
             this.width = CREATURE_WIDTH;
             this.height = CREATURE_HEIGHT;
             
-            if(type == FIRST_TYPE) {
+            switch(type) {
+            case FIRST_TYPE:
                 this.health = FIRST_HEALTH + (evolution * FIRST_MULTIPLIER);
                 
-            } else if(type == SECOND_TYPE) {
+            case SECOND_TYPE:
                 this.health = SECOND_HEALTH + (evolution * SECOND_MULTIPLIER);
                 
-            } else if(type == THIRD_TYPE) {
+            case THIRD_TYPE:
                 this.health = THIRD_HEALTH + (evolution * THIRD_MULTIPLIER);
                 
-            } else if(type == FOURTH_TYPE) {
+            case FOURTH_TYPE:
                 this.health = FOURTH_HEALTH + (evolution * FOURTH_MULTIPLIER);
             }
         }

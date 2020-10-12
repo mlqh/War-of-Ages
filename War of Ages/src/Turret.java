@@ -32,8 +32,9 @@ public class Turret extends Entity implements EntityConstants {
         this.damage = TURRET_ATTACK + (evolution * TURRET_UPGRADE);
         this.attackSpeed = TURRET_ATTACK_SPEED;
         
-        if(turretSpot == FIRST_TURRET){
-            if(teamSide == LEFT_TEAM) {
+        switch(turretSpot) {
+        case FIRST_TURRET:
+        if(teamSide == LEFT_TEAM) {
                 this.setPosition(LEFT_FIRST_TURRET_POS);
                 this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y) ,TURRET_RANGE,TURRET_RANGE);
             } else {
@@ -41,7 +42,7 @@ public class Turret extends Entity implements EntityConstants {
                 this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y) ,TURRET_RANGE,TURRET_RANGE);
             }
             
-        } else if(turretSpot == SECOND_TURRET) {
+        case SECOND_TURRET:
             if(teamSide == LEFT_TEAM) {
                 this.setPosition(LEFT_SECOND_TURRET_POS);
                 this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y) ,TURRET_RANGE,TURRET_RANGE);
@@ -50,7 +51,7 @@ public class Turret extends Entity implements EntityConstants {
                 this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y) ,TURRET_RANGE,TURRET_RANGE);
             }
             
-        } else if(turretSpot == THIRD_TURRET) { 
+        case THIRD_TURRET:
             if(teamSide == LEFT_TEAM) {
                 this.setPosition(LEFT_THIRD_TURRET_POS);
                 this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y) ,TURRET_RANGE,TURRET_RANGE);

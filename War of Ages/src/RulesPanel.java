@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 public class RulesPanel extends JPanel implements GameConstants {
     
-    private JLabel firstLabel, secondLabel;
+	private JLabel firstLabel, secondLabel;
     private JButton nextButton, OKButton;
     private ImageIcon firstBackground, secondBackground;
     

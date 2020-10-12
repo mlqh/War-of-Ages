@@ -31,7 +31,7 @@ public class Hitbox {
     
     public void update(Point point) {
         this.position = point;
-        this.boundingBox.setLocation(position);
+        this.boundingBox.setLocation(this.position);
     }
     
     //-----------------------------------------
