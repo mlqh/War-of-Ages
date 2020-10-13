@@ -30,8 +30,7 @@ class GameFrame extends JFrame implements GameConstants {
         setCursor(Toolkit.getDefaultToolkit().createCustomCursor(new ImageIcon("Images/cursor" + PNG_EXT).getImage(),
                                                                  new Point(0, 0), "custom cursor"));
         
-        cardsPanel = new JPanel(new CardLayout());
-        
+        cardsPanel = new JPanel(new CardLayout());    
         loginPanel = new LoginPanel();
         menuPanel = new MenuPanel();
         rulesPanel = new RulesPanel();

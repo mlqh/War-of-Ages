@@ -33,7 +33,7 @@ public interface GameConstants {
     // Menu
     public static final String PAUSE_STRING = "SPACE";
     public static final String EVOLUTION = "EVO.";
-    public static final String VOLUME_STRING = "M";
+    public static final String VOLUME_STRING = "G";
     public static final String LEFT_EVOLVE_STRING = "Press A To Evolve!";
     public static final String RIGHT_EVOLVE_STRING = "Press L to Evolve!";
     public static final String CREATURE_CREATION_ICONS_PATH = "Images\\Menu\\CreatureCreationIcons\\";
@@ -60,7 +60,6 @@ public interface GameConstants {
     public static final Point RIGHT_FIRST_ICON_POS = new Point(SCREEN_WIDTH - ICON_WIDTH - 30,50);
     public static final Point RIGHT_FIRST_CC_POS = new Point(945,50);
 
-    
     // Misc
     public static final int MAX_IN_QUEUE = 4;
     public static final int STARTING_TURRETS = 0;

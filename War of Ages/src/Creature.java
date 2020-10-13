@@ -43,6 +43,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 			this.attackSpeed = FIRST_ATTACK_SPEED;
 			this.goldFromKill = FIRST_KILL_GOLD;
 			range = FIRST_RANGE;
+			break;
 
 		case SECOND_TYPE:
 			this.damage = SECOND_ATTACK + (evolution * SECOND_MULTIPLIER);
@@ -50,6 +51,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 			this.attackSpeed = SECOND_ATTACK_SPEED;
 			this.goldFromKill = SECOND_KILL_GOLD;
 			range = SECOND_RANGE;
+			break;
 
 		case THIRD_TYPE:
 			this.damage = THIRD_ATTACK + (evolution * THIRD_MULTIPLIER);
@@ -57,6 +59,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 			this.attackSpeed = THIRD_ATTACK_SPEED;
 			this.goldFromKill = THIRD_KILL_GOLD;
 			range = THIRD_RANGE;
+			break;
 
 		case FOURTH_TYPE:
 			this.damage = FOURTH_ATTACK + (evolution * FOURTH_MULTIPLIER);
@@ -64,6 +67,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 			this.attackSpeed = FOURTH_ATTACK_SPEED;
 			this.goldFromKill = FOURTH_KILL_GOLD;
 			range = FOURTH_RANGE;
+			break;
 		} 
 
 		if(teamSide == LEFT_TEAM) {
