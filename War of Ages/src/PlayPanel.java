@@ -121,7 +121,7 @@ public class PlayPanel extends JPanel implements GameConstants, EntityConstants 
         try {
             for(int row = 0; row < NUM_DIFFERENT_CREATURES; row++) {
                 for(int evolution = 0; evolution < NUM_EVOLUTIONS; evolution++) {
-                    this.creatureCreationIcons[row][evolution] = ImageIO.read(new File(CREATURE_CREATION_ICONS_PATH+row+"-"+evolution+PNG_EXT));
+                    this.creatureCreationIcons[row][evolution] = ImageIO.read(new File(CREATURE_CREATION_ICONS_PATH + row + "-" + evolution + PNG_EXT));
                     for(int column = 0; column < NUM_MOVE_SPRITES; column++) {
                         this.leftMove[row][evolution][column] = ImageIO.read(new File(LEFT_MOVE_PATH + row + "\\" + evolution + "-" + column + PNG_EXT));
                         this.rightMove[row][evolution][column] = ImageIO.read(new File(RIGHT_MOVE_PATH + row + "\\" + evolution + "-" + column + PNG_EXT));

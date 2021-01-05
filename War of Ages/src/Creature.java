@@ -10,7 +10,7 @@ import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 
-public class Creature extends Destructible implements GameConstants, EntityConstants{
+public class Creature extends Destructible implements GameConstants, EntityConstants {
 
 	private int speed;
 	private Hitbox rangebox;
