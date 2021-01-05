@@ -103,7 +103,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 		this.updatePositions();
 	}
 
-	// update positions of this creature's hitbox, rangebox, self
+	// update positions of this creature's hitbox, rangebox, itself
 	public void updatePositions() {
 		Point creaturePos = this.getPosition();
 		Point hitboxPos = this.getHitbox().getPosition();
