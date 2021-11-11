@@ -1,16 +1,9 @@
-/**
- * Creature.java
- * Creature class
- * Matthew Hao
- * Jan 20, 2020
- */
-
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.util.LinkedList;
 
-public class Creature extends Destructible implements GameConstants, EntityConstants {
+public class Creature extends Destructible {
 
 	private int speed;
 	private Hitbox rangebox;
@@ -28,7 +21,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 	private int currentAttackIndex;
 	private boolean idling = false;
 
-	public Creature(int teamSide, int type, int evolution, BufferedImage[] move, BufferedImage[] attack) { 
+	public Creature(int teamSide, int type, int evolution, BufferedImage[] move, BufferedImage[] attack) {
 		super(teamSide, type, evolution);
 		this.moveSprites = move;
 		this.attackSprites = attack;
@@ -36,7 +29,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 		this.currentMoveIndex = INITIAL_SPRITE_INDEX;
 		int range = 0;
 
-		switch(type) {
+		switch (type) {
 		case FIRST_TYPE:
 			this.damage = FIRST_ATTACK + (evolution * FIRST_MULTIPLIER);
 			this.speed = FIRST_SPEED * this.getTeamSide();
@@ -47,7 +40,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 
 		case SECOND_TYPE:
 			this.damage = SECOND_ATTACK + (evolution * SECOND_MULTIPLIER);
-			this.speed = SECOND_SPEED * this.getTeamSide(); 
+			this.speed = SECOND_SPEED * this.getTeamSide();
 			this.attackSpeed = SECOND_ATTACK_SPEED;
 			this.goldFromKill = SECOND_KILL_GOLD;
 			range = SECOND_RANGE;
@@ -68,9 +61,9 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 			this.goldFromKill = FOURTH_KILL_GOLD;
 			range = FOURTH_RANGE;
 			break;
-		} 
+		}
 
-		if(teamSide == LEFT_TEAM) {
+		if (teamSide == LEFT_TEAM) {
 			Point point = new Point(this.getPosition().x + this.getWidth(), this.getPosition().y);
 			this.rangebox = new Hitbox(point, range, range);
 		} else {
@@ -81,11 +74,11 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 
 	public void attack(Destructible target) {
 		this.currentTarget = target;
-		if(this.currentAttackIndex == LAST_ATTACK_SPRITE) {
+		if (this.currentAttackIndex == LAST_ATTACK_SPRITE) {
 			this.currentAttackIndex = FIRST_SPRITE;
 		} else {
 			this.currentAttackIndex++;
-		}  
+		}
 		this.currentSprite = attackSprites[currentAttackIndex];
 
 		target.takeDamage(this.damage);
@@ -94,7 +87,7 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 	}
 
 	public void move() {
-		if(this.currentMoveIndex == LAST_MOVE_SPRITE) {
+		if (this.currentMoveIndex == LAST_MOVE_SPRITE) {
 			this.currentMoveIndex = FIRST_SPRITE;
 		} else {
 			this.currentMoveIndex++;
@@ -122,32 +115,34 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 	public Creature getFriendlyAhead(Player self) {
 		LinkedList<Creature> creatures = self.getCreatures();
 		int thisIndex = creatures.indexOf(this);
-		return creatures.get(thisIndex- 1);
+		return creatures.get(thisIndex - 1);
 	}
 
 	public void draw(Graphics g) {
-		if(this.idling) {
+		if (this.idling) {
 			this.currentSprite = this.moveSprites[IDLE_SPRITE];
 		}
 		g.drawImage(this.currentSprite, this.getPosition().x, this.getPosition().y, null);
 	}
 
-	//------------------------------------
+	// ------------------------------------
 	public int getDamage() {
 		return this.damage;
 	}
 
-	public Destructible getCurrentTarget(){
+	public Destructible getCurrentTarget() {
 		return this.currentTarget;
 	}
-	public void setCurrentTarget(Destructible target){
+
+	public void setCurrentTarget(Destructible target) {
 		this.currentTarget = target;
 	}
+
 	public long getTimeStartedAttack() {
 		return this.timeStartedAttack;
 	}
 
-	public void setTimeStartedAttack(long startTime){
+	public void setTimeStartedAttack(long startTime) {
 		this.timeStartedAttack = startTime;
 	}
 
@@ -217,9 +212,9 @@ public class Creature extends Destructible implements GameConstants, EntityConst
 
 	public void setIdling(boolean idling) {
 		this.idling = idling;
-		if(idling) {
+		if (idling) {
 			this.setCurrentSprite(this.getMoveSprites()[HEAD]);
 		}
 	}
-	//------------------------------------       
+
 }
