@@ -21,7 +21,7 @@ class GameFrame extends JFrame implements GameConstants {
 
         // set a custom cursor
         setCursor(Toolkit.getDefaultToolkit().createCustomCursor(
-                new ImageIcon(this.getClass().getResource("Images/cursor" + PNG_EXT)).getImage(), new Point(0, 0),
+                new ImageIcon(this.getClass().getResource("Assets/cursor" + PNG_EXT)).getImage(), new Point(0, 0),
                 "custom cursor"));
 
         cardsPanel = new JPanel(new CardLayout());

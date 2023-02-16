@@ -9,19 +9,19 @@ public interface GameConstants {
 
     // Image paths
     public static final String PNG_EXT = ".png";
-    public static final String BACKGROUND_PATH = "Images/Backgrounds/";
+    public static final String BACKGROUND_PATH = "Assets/Backgrounds/";
 
-    public static final String LEFT_MOVE_PATH = "Images/Sprites/Left/Move/";
-    public static final String LEFT_ATTACK_PATH = "Images/Sprites/Left/Attack/";
-    public static final String LEFT_TOWER_PATH = "Images/Sprites/Left/Tower/";
-    public static final String LEFT_TURRET_PATH = "Images/Sprites/Left/Turret/";
-    public static final String LEFT_PROJECTILE_PATH = "Images/Sprites/Left/Projectiles/";
+    public static final String LEFT_MOVE_PATH = "Assets/Sprites/Left/Move/";
+    public static final String LEFT_ATTACK_PATH = "Assets/Sprites/Left/Attack/";
+    public static final String LEFT_TOWER_PATH = "Assets/Sprites/Left/Tower/";
+    public static final String LEFT_TURRET_PATH = "Assets/Sprites/Left/Turret/";
+    public static final String LEFT_PROJECTILE_PATH = "Assets/Sprites/Left/Projectiles/";
 
-    public static final String RIGHT_MOVE_PATH = "Images/Sprites/Right/Move/";
-    public static final String RIGHT_ATTACK_PATH = "Images/Sprites/Right/Attack/";
-    public static final String RIGHT_TOWER_PATH = "Images/Sprites/Right/Tower/";
-    public static final String RIGHT_TURRET_PATH = "Images/Sprites/Right/Turret/";
-    public static final String RIGHT_PROJECTILE_PATH = "Images/Sprites/Right/Projectiles/";
+    public static final String RIGHT_MOVE_PATH = "Assets/Sprites/Right/Move/";
+    public static final String RIGHT_ATTACK_PATH = "Assets/Sprites/Right/Attack/";
+    public static final String RIGHT_TOWER_PATH = "Assets/Sprites/Right/Tower/";
+    public static final String RIGHT_TURRET_PATH = "Assets/Sprites/Right/Turret/";
+    public static final String RIGHT_PROJECTILE_PATH = "Assets/Sprites/Right/Projectiles/";
 
     // Menu
     public static final String PAUSE_STRING = "SPACE";
@@ -29,9 +29,9 @@ public interface GameConstants {
     public static final String VOLUME_STRING = "G";
     public static final String LEFT_EVOLVE_STRING = "Press A To Evolve!";
     public static final String RIGHT_EVOLVE_STRING = "Press L to Evolve!";
-    public static final String CREATURE_CREATION_ICONS_PATH = "Images/Menu/CreatureCreationIcons/";
-    public static final String TURRET_CREATION_ICONS_PATH = "Images/Menu/TurretCreationIcons/";
-    public static final String MAIN_ICONS_PATH = "Images/Menu/MainIcons/";
+    public static final String CREATURE_CREATION_ICONS_PATH = "Assets/Menu/CreatureCreationIcons/";
+    public static final String TURRET_CREATION_ICONS_PATH = "Assets/Menu/TurretCreationIcons/";
+    public static final String MAIN_ICONS_PATH = "Assets/Menu/MainIcons/";
     public static final int ICON_WIDTH = 25;
     public static final int ICON_HEIGHT = 25;
     public static final int ICON_SEPARATOR = 20;

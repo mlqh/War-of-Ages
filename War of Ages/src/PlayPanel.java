@@ -54,7 +54,7 @@ public class PlayPanel extends JPanel implements GameConstants, EntityConstants 
         }
 
         try {
-            audioStream = AudioSystem.getAudioInputStream(this.getClass().getResource("backgroundMusic.wav"));
+            audioStream = AudioSystem.getAudioInputStream(this.getClass().getResource("Assets/backgroundMusic.wav"));
             music = AudioSystem.getClip();
             music.open(audioStream);
         } catch (Exception e) {
@@ -157,7 +157,7 @@ public class PlayPanel extends JPanel implements GameConstants, EntityConstants 
         } catch (Exception e) {
             System.out.println("error loading image " + e.getMessage());
         }
-    } // importImages
+    }
 
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
