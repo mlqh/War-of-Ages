@@ -42,7 +42,6 @@ public class Projectile implements GameConstants, EntityConstants {
         g.drawImage(this.currentSprite, this.position.x, this.position.y, null);
     }
 
-    // ---------------------------------
     public Hitbox getHitbox() {
         return hitbox;
     }

@@ -8,7 +8,7 @@ import java.awt.Toolkit;
 
 class GameFrame extends JFrame implements GameConstants {
 
-    static JPanel cardsPanel, loginPanel, menuPanel, rulesPanel, playPanel, overPanel;
+    JPanel cardsPanel, loginPanel, menuPanel, rulesPanel, playPanel, overPanel;
 
     public GameFrame() {
         // set up frame

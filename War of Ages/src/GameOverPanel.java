@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 public class GameOverPanel extends JPanel implements GameConstants {
 
-    static String winner;
+    String winner;
 
     public GameOverPanel(String winner) {
         setLayout(null);

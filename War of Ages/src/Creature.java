@@ -30,37 +30,37 @@ public class Creature extends Destructible {
 		int range = 0;
 
 		switch (type) {
-		case FIRST_TYPE:
-			this.damage = FIRST_ATTACK + (evolution * FIRST_MULTIPLIER);
-			this.speed = FIRST_SPEED * this.getTeamSide();
-			this.attackSpeed = FIRST_ATTACK_SPEED;
-			this.goldFromKill = FIRST_KILL_GOLD;
-			range = FIRST_RANGE;
-			break;
+			case FIRST_TYPE:
+				this.damage = FIRST_ATTACK + (evolution * FIRST_MULTIPLIER);
+				this.speed = FIRST_SPEED * this.getTeamSide();
+				this.attackSpeed = FIRST_ATTACK_SPEED;
+				this.goldFromKill = FIRST_KILL_GOLD;
+				range = FIRST_RANGE;
+				break;
 
-		case SECOND_TYPE:
-			this.damage = SECOND_ATTACK + (evolution * SECOND_MULTIPLIER);
-			this.speed = SECOND_SPEED * this.getTeamSide();
-			this.attackSpeed = SECOND_ATTACK_SPEED;
-			this.goldFromKill = SECOND_KILL_GOLD;
-			range = SECOND_RANGE;
-			break;
+			case SECOND_TYPE:
+				this.damage = SECOND_ATTACK + (evolution * SECOND_MULTIPLIER);
+				this.speed = SECOND_SPEED * this.getTeamSide();
+				this.attackSpeed = SECOND_ATTACK_SPEED;
+				this.goldFromKill = SECOND_KILL_GOLD;
+				range = SECOND_RANGE;
+				break;
 
-		case THIRD_TYPE:
-			this.damage = THIRD_ATTACK + (evolution * THIRD_MULTIPLIER);
-			this.speed = THIRD_SPEED * this.getTeamSide();
-			this.attackSpeed = THIRD_ATTACK_SPEED;
-			this.goldFromKill = THIRD_KILL_GOLD;
-			range = THIRD_RANGE;
-			break;
+			case THIRD_TYPE:
+				this.damage = THIRD_ATTACK + (evolution * THIRD_MULTIPLIER);
+				this.speed = THIRD_SPEED * this.getTeamSide();
+				this.attackSpeed = THIRD_ATTACK_SPEED;
+				this.goldFromKill = THIRD_KILL_GOLD;
+				range = THIRD_RANGE;
+				break;
 
-		case FOURTH_TYPE:
-			this.damage = FOURTH_ATTACK + (evolution * FOURTH_MULTIPLIER);
-			this.speed = FOURTH_SPEED * this.getTeamSide();
-			this.attackSpeed = FOURTH_ATTACK_SPEED;
-			this.goldFromKill = FOURTH_KILL_GOLD;
-			range = FOURTH_RANGE;
-			break;
+			case FOURTH_TYPE:
+				this.damage = FOURTH_ATTACK + (evolution * FOURTH_MULTIPLIER);
+				this.speed = FOURTH_SPEED * this.getTeamSide();
+				this.attackSpeed = FOURTH_ATTACK_SPEED;
+				this.goldFromKill = FOURTH_KILL_GOLD;
+				range = FOURTH_RANGE;
+				break;
 		}
 
 		if (teamSide == LEFT_TEAM) {
@@ -125,7 +125,6 @@ public class Creature extends Destructible {
 		g.drawImage(this.currentSprite, this.getPosition().x, this.getPosition().y, null);
 	}
 
-	// ------------------------------------
 	public int getDamage() {
 		return this.damage;
 	}

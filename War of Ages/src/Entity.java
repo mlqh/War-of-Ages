@@ -60,7 +60,6 @@ public abstract class Entity implements GameConstants, EntityConstants {
         }
     }
 
-    // -------------------------------------------------
     public Point getPosition() {
         return this.position;
     }

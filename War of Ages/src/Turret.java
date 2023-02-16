@@ -27,41 +27,41 @@ public class Turret extends Entity {
 		this.attackSpeed = TURRET_ATTACK_SPEED;
 
 		switch (turretSpot) {
-		case FIRST_TURRET:
-			if (teamSide == LEFT_TEAM) {
-				this.setPosition(LEFT_FIRST_TURRET_POS);
-				this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y),
-						TURRET_RANGE, TURRET_RANGE);
-			} else {
-				this.setPosition(RIGHT_FIRST_TURRET_POS);
-				this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y),
-						TURRET_RANGE, TURRET_RANGE);
-			}
-			break;
+			case FIRST_TURRET:
+				if (teamSide == LEFT_TEAM) {
+					this.setPosition(LEFT_FIRST_TURRET_POS);
+					this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y),
+							TURRET_RANGE, TURRET_RANGE);
+				} else {
+					this.setPosition(RIGHT_FIRST_TURRET_POS);
+					this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y),
+							TURRET_RANGE, TURRET_RANGE);
+				}
+				break;
 
-		case SECOND_TURRET:
-			if (teamSide == LEFT_TEAM) {
-				this.setPosition(LEFT_SECOND_TURRET_POS);
-				this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y),
-						TURRET_RANGE, TURRET_RANGE);
-			} else {
-				this.setPosition(RIGHT_SECOND_TURRET_POS);
-				this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y),
-						TURRET_RANGE, TURRET_RANGE);
-			}
-			break;
+			case SECOND_TURRET:
+				if (teamSide == LEFT_TEAM) {
+					this.setPosition(LEFT_SECOND_TURRET_POS);
+					this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y),
+							TURRET_RANGE, TURRET_RANGE);
+				} else {
+					this.setPosition(RIGHT_SECOND_TURRET_POS);
+					this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y),
+							TURRET_RANGE, TURRET_RANGE);
+				}
+				break;
 
-		case THIRD_TURRET:
-			if (teamSide == LEFT_TEAM) {
-				this.setPosition(LEFT_THIRD_TURRET_POS);
-				this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y),
-						TURRET_RANGE, TURRET_RANGE);
-			} else {
-				this.setPosition(RIGHT_THIRD_TURRET_POS);
-				this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y),
-						TURRET_RANGE, TURRET_RANGE);
-			}
-			break;
+			case THIRD_TURRET:
+				if (teamSide == LEFT_TEAM) {
+					this.setPosition(LEFT_THIRD_TURRET_POS);
+					this.rangebox = new Hitbox(new Point(this.getPosition().x + TURRET_WIDTH, this.getPosition().y),
+							TURRET_RANGE, TURRET_RANGE);
+				} else {
+					this.setPosition(RIGHT_THIRD_TURRET_POS);
+					this.rangebox = new Hitbox(new Point(this.getPosition().x - TURRET_RANGE, this.getPosition().y),
+							TURRET_RANGE, TURRET_RANGE);
+				}
+				break;
 		}
 	}
 
@@ -86,7 +86,6 @@ public class Turret extends Entity {
 		}
 	}
 
-	// -----------------------------------------/
 	public int getGoldFromSell() {
 		return this.goldFromSell;
 	}
